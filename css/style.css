@@ -1,0 +1,274 @@
+:root{
+    /* ### Primary */
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%); 
+    /* ### Neutral */
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+
+    /* ### Headings */
+    --font-primary: 'Poppins', sans-serif;
+    /* ### Body */
+    --font-secondary: 'Open Sans', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar{
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo img{
+    width: 200px;
+}
+.navbar .btn-nav button{
+   background-color: white;
+   padding: 8px 25px;
+   border-radius: 20px;
+   border-color: var(--Pink);
+   color: var(--Pink);
+}
+.navbar .btn-nav button:hover{
+    cursor: pointer;
+    background-color: var(--Light-Red);
+    color: white;
+    transition: all .2s ease-in-out ;
+ }
+
+.header-texto{
+    margin-top: 80px;
+    font-family: var(--font-primary);
+    color: var(--Very-Dark-Cyan);
+}
+.header-texto h1{
+  font-family: var(--font-primary);
+}
+.header-texto p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: var(--font-secondary);
+    width: 90%;
+    margin: 0 auto;
+}
+.btn {
+    margin-top: 20px;
+    background-color: var(--Pink);
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+.btn:hover {
+   
+    background-color: var(--Light-Red);
+    transition: all .2s ease-in-out ;
+    transform: scale(1.1);
+   
+}
+.followers .mockup-images{
+    width: 100%;
+    padding-top: 100px;
+}
+.followers .mockup-images img{
+    width: 100%;
+    max-width: 600px;
+}
+main .followers .texto-followes img{
+    margin-right: 86px;
+    width: 40px;   
+}
+main .followers .texto-followes{
+    padding-top: 80px;
+    font-family: var(--font-secondary);
+
+}
+main .followers .texto-followes h2{
+    font-size: 45px;
+}
+main .followers .texto-followes p{
+    padding-bottom: 50px;
+}
+.conversation img{
+    width: 100%;
+    padding-top: 90px;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+.conversation h3{
+    padding-top: 80px;
+    font-size: 24px;
+    font-family: var(--font-primary);
+}
+.conversation p{
+    padding-top: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    font-size: var(--font-primary);
+    padding-bottom: 60px;
+    
+}
+.ready{
+    height: 30vh;
+}
+
+footer .footer-flex .newsletter{
+    text-align: left;
+    /* color: white; */
+}
+footer .footer-flex .newsletter h4{
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-family: var(--font-primary);
+    
+}
+footer .footer-flex .newsletter p{
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family: var(--font-secondary);
+}
+footer .footer-flex .newsletter .suscribe{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-flex .newsletter .suscribe .cajita_btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    outline: none;
+    /* border: none; */
+}
+footer .footer-flex .newsletter .suscribe .suscribe-btn{
+    border: none;
+    color: white;
+    padding: 15px 18px ;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    width: 141px;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+footer .footer-flex .contacto{
+    text-align: start;
+    font-family: var(--font-secondary);
+}
+footer .footer-flex .contacto img{
+    width: 200px;
+    margin-bottom: 18px;
+}
+footer .footer-flex .contacto p{
+    text-align: start;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+footer .contacto .footer-contact{
+    line-height: 50px;
+}
+footer .contacto .footer-contact::after{
+    content: "Phone: +1-543-123-4567";
+    margin-left: 10px;
+}
+
+footer .contacto .footer-contact-email::after{
+    content: "example@huddle.com";
+}
+footer .redes{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    gap: 16px;
+}
+footer .redes a{
+    text-decoration: none;
+}
+@media (min-width:768px){
+    .navbar{
+        padding: 40px;
+        margin-bottom: 120px;
+    }
+    .navbar .logo img{
+        width: 100%;
+    }
+    .navbar .btn-nav button{
+        font-size: 16px;
+        padding: 18px 45px;
+     }
+    .header-texto h1{
+      font-size: 48px;
+    }
+    .header-texto p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .btn { 
+        padding: 20px 45px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .texto-followes{
+        display: flex;
+        justify-content: space-around;
+    }
+    .conversation h3{
+        text-align: start;
+    }
+    .conversation p{
+        width: 80%;
+        text-align: start;
+    }
+    .conversation .grow{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .conversation .user{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .grow,.flowing,.user{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+    
+    }
+    .ready{
+        margin-top: 180px;
+       
+    }
+    .ready h3{
+        font-size: 32px;
+    }
+    .footer-flex{
+      width: 100%;
+      padding: 0 80px 80px 80px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    footer .redes{
+        display: flex;
+       justify-content: start;
+    }
+    
+}
